@@ -1,6 +1,6 @@
 *,
 *::after,
-*:before {
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,6 +12,12 @@
   --red: #ff0000;
   --light-gray: #d9d9d94a;
   --white: #fff;
+  width: 100%;
+  padding: 0;
+}
+
+#root {
+  padding: 0;
 }
 
 ul {
@@ -21,6 +27,7 @@ ul {
 button,
 input,
 a {
+  border: none;
   font-size: inherit;
   font-family: inherit;
   font-weight: inherit;
@@ -34,7 +41,9 @@ a {
 
 body {
   width: 100vw;
-  :hover {
-    opacity: 0.8;
-  }
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--black);
+  caret-color: transparent;
 }

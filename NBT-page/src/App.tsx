@@ -1,7 +1,7 @@
-import "./styles/App.scss";
+import ContactHeader from "./components/ContactHeader/ContactHeader";
 
-function App() {
-  return <></>;
-}
+const App: React.FC = () => {
+  return <ContactHeader />;
+};
 
 export default App;
