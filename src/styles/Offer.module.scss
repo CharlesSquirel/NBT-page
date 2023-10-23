@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 795px;
+}
+
+.textContainer,
+.backgroundImg {
+  width: calc(100vw - 50%);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 50px;
+  background: var(--dark-gray);
+  @media screen and (min-width: 1440px) {
+    width: 65%;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style-type: initial;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.backgroundImg {
+  min-height: 795px;
+  object-position: center;
+  @media screen and (min-width: 1750px) {
+    width: 35%;
+  }
+}
