@@ -1,7 +1,11 @@
 .container {
   display: flex;
+  position: relative;
   width: 100%;
   min-height: 795px;
+  @media screen and (max-width: 717px) {
+    min-height: 736px;
+  }
 }
 
 .textContainer,
@@ -10,6 +14,7 @@
 }
 
 .textContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -17,6 +22,24 @@
   background: var(--dark-gray);
   @media screen and (min-width: 1440px) {
     width: 65%;
+  }
+  @media screen and (max-width: 717px) {
+    width: 100%;
+    background: url("../components/assets/bg-person.jpg") no-repeat;
+    background-size: cover;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffffb8;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    background-position: -130px;
   }
 }
 
@@ -27,6 +50,7 @@
   list-style-type: initial;
   font-size: 20px;
   padding: 0 20px;
+  z-index: 1;
 }
 
 .backgroundImg {
@@ -34,5 +58,8 @@
   object-position: center;
   @media screen and (min-width: 1750px) {
     width: 35%;
+  }
+  @media screen and (max-width: 717px) {
+    display: none;
   }
 }
