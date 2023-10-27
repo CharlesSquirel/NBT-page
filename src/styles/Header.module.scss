@@ -84,8 +84,10 @@ $max-mobile-nav: 976px;
     @media screen and (max-width: $max-mobile-nav) {
       display: none;
     }
+
     li {
       cursor: pointer;
+
       &:hover {
         opacity: 0.8;
       }
