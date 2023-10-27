@@ -1,14 +1,13 @@
 import React from "react";
 import bgOfferImg from "../assets/bg-person.jpg";
-import style from "../../styles/Offer.module.scss";
 import globalStyle from "../../styles/Globals.module.scss";
 
 const Offer: React.FC = () => {
   return (
-    <main className={style.container}>
-      <div className={style.textContainer}>
+    <main className={globalStyle.container}>
+      <div className={`${globalStyle.textContainer} ${globalStyle.offerBgImg}`}>
         <h2 className={globalStyle.sectionTitle}>Oferta</h2>
-        <ul className={style.description}>
+        <ul className={globalStyle.description}>
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.sed do eiusmod tempor incididunt ut labore et</li>
           <li>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </li>
           <li>exercitation ullamco laboris nisi ut aliquip ex ea commodo </li>
@@ -16,7 +15,7 @@ const Offer: React.FC = () => {
           <li>qui officia deserunt mollit anim id est laborum</li>
         </ul>
       </div>
-      <div className={style.backgroundImg}>
+      <div className={globalStyle.backgroundImg}>
         <img src={bgOfferImg} alt="Person at office desk" />
       </div>
     </main>
