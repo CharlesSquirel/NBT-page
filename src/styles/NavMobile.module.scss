@@ -6,6 +6,7 @@
   height: calc(100vh - 50%);
   background: var(--dark-gray);
   animation: 0.6s ease-in-out navAnimation;
+  z-index: 2;
   ul {
     display: flex;
     flex-direction: column;
