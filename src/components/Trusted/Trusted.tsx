@@ -5,29 +5,36 @@ import style from "../../styles/Trusted.module.scss";
 
 const Trusted: React.FC = () => {
   return (
-    <main>
+    <main className={style.container}>
       <h2 className={globalStyle.sectionTitle}>Zaufali mi</h2>
       <section className={style.logoContainer}>
-        <div>
+        <div className={style.imgBox}>
           <img src={avatarImg} alt="Firma logo" className={style.logo} />
+          <p>Firma A</p>
         </div>
-        <div>
+        <div className={style.imgBox}>
           <img src={avatarImg} alt="Firma logo" className={style.logo} />
+          <p>Firma A</p>
         </div>
-        <div>
+        <div className={style.imgBox}>
           <img src={avatarImg} alt="Firma logo" className={style.logo} />
+          <p>Firma A</p>
         </div>
-        <div>
+        <div className={style.imgBox}>
           <img src={avatarImg} alt="Firma logo" className={style.logo} />
+          <p>Firma A</p>
         </div>
-        <div>
+        <div className={style.imgBox}>
           <img src={avatarImg} alt="Firma logo" className={style.logo} />
+          <p>Firma A</p>
         </div>
-        <div>
+        <div className={style.imgBox}>
           <img src={avatarImg} alt="Firma logo" className={style.logo} />
+          <p>Firma A</p>
         </div>
-        <div>
+        <div className={style.imgBox}>
           <img src={avatarImg} alt="Firma logo" className={style.logo} />
+          <p>Firma A</p>
         </div>
       </section>
     </main>
