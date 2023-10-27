@@ -1,9 +1,11 @@
+$max-mobile-offer: 717px;
+
 .container {
   display: flex;
   position: relative;
   width: 100%;
   min-height: 795px;
-  @media screen and (max-width: 717px) {
+  @media screen and (max-width: $max-mobile-offer) {
     min-height: 736px;
   }
 }
@@ -19,11 +21,11 @@
   flex-direction: column;
   gap: 40px;
   padding: 50px;
-  background: var(--dark-gray);
+  background: var(--light-gray);
   @media screen and (min-width: 1440px) {
     width: 65%;
   }
-  @media screen and (max-width: 717px) {
+  @media screen and (max-width: $max-mobile-offer) {
     width: 100%;
     background: url("../components/assets/bg-person.jpg") no-repeat;
     background-size: cover;
@@ -59,7 +61,7 @@
   @media screen and (min-width: 1750px) {
     width: 35%;
   }
-  @media screen and (max-width: 717px) {
+  @media screen and (max-width: $max-mobile-offer) {
     display: none;
   }
 }
